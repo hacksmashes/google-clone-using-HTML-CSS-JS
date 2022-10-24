@@ -1,0 +1,381 @@
+/* Style for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Theme selector */
+.mode{
+    position: absolute;
+    left: 25px;
+}
+
+/* Theme selector image */
+.mode img{
+    position: absolute;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* Dark theme */
+.mode #dark{
+    display: block;
+}
+
+/* Dark theme hover */
+.mode #dark:hover{
+    background-color: #ebebeb;
+    transition: all 0.2s ease-out;
+}
+
+/* Light theme */
+.mode #light{
+    background-color: #202124;
+    display: none;
+    border: 1px solid #202124;
+}
+
+/* Light theme hover */
+.mode #light:hover{
+    background-color: #323336;
+    transition: all 0.2s ease-out;
+}
+
+/* Header */
+header{
+    height: 48px;
+    padding: 6px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 6px;
+}
+
+.header{
+    width: 217px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 4px 0 32px;
+}
+
+/* Gmail */
+.header .gmail{
+    font-size: small;
+    font-family: arial,sans-serif;
+    color: black;
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Images */
+.header .images{
+    font-size: small;
+    font-family: arial,sans-serif;
+    color: #202124;
+    padding: 0 15px;
+    text-transform: capitalize;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Google apps button */
+.header .apps{
+    filter: invert(1);
+    padding: 8px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Google apps button hover */
+.header .apps:hover{
+    background-color: #1b1b1b;
+    border-radius: 50%;
+}
+
+/* Google account logo */
+.header .acc{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+/* Google apps */
+#apps_menu{
+    opacity: 0;
+}
+
+.gl_apps{
+    width: 290px;
+    height: 300px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.2s ease-out;
+}
+
+/* Apps boxes */
+.gl_apps .app_box{
+    width: 73px;
+    height: 80px;
+    transform: translate(0, 10px);
+    margin: 0 0 10px 17px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 10px;
+}
+
+/* Apps boxes hover */
+.gl_apps .app_box:hover{
+    background-color: #70757a1e;
+    border-radius: 10px;
+}
+
+/* Google apps images field */
+.gl_apps .app_box .a_i_b{
+    width: 73px;
+    padding-right: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Google apps title field */
+.gl_apps .app_box .a_i_h{
+    width: 73px;
+    padding-right: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Google apps logo */
+.gl_apps .app_box img{
+    width: 35px;
+    height: 30px;
+}
+
+.gl_apps .app_box:nth-child(9) img{
+    width: 42px;
+}
+
+/* Google apps title */
+.gl_apps .app_box h3{
+    font-family: arial,sans-serif;
+    font-size: small;
+    font-weight: normal;
+    color: black;
+    text-transform: capitalize;
+    padding: 10px 0 0 0;
+    cursor: default;
+}
+
+/* Google brand container */
+.gl_cont{
+    height: 193px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Google brand dark theme container */
+.gl_cont .gl_dt{
+    width: 272px;
+    height: 92px;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(75, 75, 75); 
+    border-radius: 10px;
+}
+
+/* Input field */
+form{
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+form .search_area{
+    width: 584px;
+    padding-top: 6px;
+}
+
+form .search_area .ip{
+    width: 587px;
+    height: 49px;
+    padding: 0 8px 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+}
+
+/* search and voice assistant button image */
+form .search_area .ip img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+form .search_area .search_field{
+    width: 502px;
+    height: 34px;
+    border: none;
+    font-size: 16px;
+    font-family: arial,sans-serif;
+    color: #202124;
+    padding-left: 10px;
+}
+
+form .search_area .search_field:focus{
+    outline: none;
+}
+
+.samp{
+    display: flex;
+    justify-content: center;
+}
+
+.a{
+    width: 584px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a .box_1{
+    width: 129px;
+    height: 36px;
+    padding: 11px 16px;
+    margin: 11px 4px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    border: 1px solid #f8f9fa;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.a .box_2{
+    width: 145px;
+    height: 36px;
+    padding: 11px 16px;
+    margin: 11px 4px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    border: 1px solid #f8f9fa;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.a .box_1:hover, .a .box_2:hover{
+    border: 1px solid rgb(118, 118, 118, 0.3);
+}
+
+/* Language field */
+.lang{
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 24px;
+    font-size: small;
+    font-family: arial,sans-serif;
+    color: #3c4043;
+    transform: translate(0, 120px);
+}
+
+.lang_field{
+    width: 540px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lang_field .langs{
+    padding-left: 0px;
+}
+
+/* Languages list */
+.lang_field a{
+    padding: 0 3px;
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+/* Languages list hover */
+.lang_field a:hover{
+    text-decoration: underline;
+}
+
+/* Country name */
+.country{
+    width: 100%;
+    height: 47px;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #999da2;
+    background-color: #f2f2f2;
+    font-family: arial,sans-serif;
+    position: absolute;
+    bottom: 50px; 
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 46px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 3px;
+}
+
+/* Footer nav */
+footer .bottom_nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+footer .bottom_nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .bottom_nav ul li{
+    padding: 15px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    cursor: pointer;
+    color: #999da2;
+}
